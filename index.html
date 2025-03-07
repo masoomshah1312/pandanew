@@ -3,35 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panda Download</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="fav.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="dashboard">
-        <div class="header">
-            <h1 class="rgb-text">Panda Download</h1>
-            <p>Your gateway to seamless downloads.</p>
-        </div>
-        <div class="download-section">
-            <div class="neon-box rgb-glow">
-                <i class="fas fa-file-download rgb-icon"></i>
-                <h2 class="rgb-text">Download File</h2>
-                <p>Click below to download your files instantly.</p>
-                <button class="neon-button rgb-button" id="download-button">
-                    <i class="fas fa-arrow-down"></i> Show Downloads
-                </button>
-                <div class="download-links" id="download-links">
-                    <a href="/minecraft/minecraft.html" class="download-link">Minecraft</a>
-                    <a href="/optimization/optimization.html" class="download-link">Optimization</a>
-                    <a href="/Editing/edit.html" class="download-link">Editing</a>
-                    <a href="/others/others.html" class="download-link">Others</a>
-                    <a href="/new/index.html" class="download-link">New Page</a>
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Downloads</h3>
+                <button id="toggleDownloads">Show Downloads</button>
+                <div class="download-container">
+                    <ul id="downloadList" class="download-list">
+                        <a href="download/apk_editor.apk"><li><button class="download-btn">Apk editor</button></li></a>
+                        <a href="download/freez.apk"><li><button class="download-btn">ICE BOX (pro)</button></li></a>
+                        <a href="download/haber.apk"><li><button class="download-btn">Hibernater (pro)</button></li></a>
+                        <a href="download/Nevo_32x.mcpack"><li><button class="download-btn">Nevo_32x</button></li></a>
+                        <a href="download/PicsArt_vip.apk"><li><button class="download-btn">PicsArt_vip </button></li></a>
+                        <a href="download/swap.apk"><li><button class="download-btn">Swap (pro)</button></li></a>
+                        <a href="download/x64.zip"><li><button class="download-btn">x64</button></li></a>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
